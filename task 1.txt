@@ -1,0 +1,23 @@
+The difference between HTTP1.1 vs HTTP2
+
+HTTP -Hypertext transfer protocol
+HTTP it is used in client-server communication.by using HTTP user sends the request to the server & the server sends the response to the user.
+
+HTTP/1.1 which was created in 1997
+HTTP/2 which was created in 2015
+
+HTTP/1.1: For better understanding, let’s assume the situation when you make a request to the server for the geeksforgeeks.
+html page & server responds to you as a resource geeksforgeeks.
+html page before sending the request and the response there is a TCP connection established between client & server
+
+HTTP/2: HTTP/2 was developed over the SPDY protocol
+HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format.
+it works on fully multiplexed that is one TCP connection is used for multiple requests.
+
+HTTP/1.1 it works textual formatand http/2 works on the binary protocol.
+
+HTTP/1.1 there is head of line blocking that blocks all the requests behind it until it doesn't get its all resources.
+HTTP/2 it allows multiplexing so one TCP connection is required for multiplre requests.
+
+HTTP/1.1 it compress data by itself.
+HTTP/2 it uses HPACK for data compession.
